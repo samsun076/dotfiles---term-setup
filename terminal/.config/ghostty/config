@@ -1,7 +1,7 @@
 # Ghostty Terminal Configuration
 
 # Theme - Solarized Dark
-theme = solarized-dark
+theme = Builtin Solarized Dark
 
 # Font Configuration
 font-family = JetBrainsMono Nerd Font
