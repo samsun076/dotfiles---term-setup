@@ -1,0 +1,17 @@
+# Ghostty Terminal Configuration
+
+# Theme - Solarized Dark
+theme = solarized-dark
+
+# Font Configuration
+font-family = JetBrainsMono Nerd Font
+font-size = 14
+
+# Window Configuration
+window-padding-x = 8
+window-padding-y = 8
+window-theme = dark
+
+# Behavior
+confirm-close-surface = false
+copy-on-select = clipboard
