@@ -14,7 +14,7 @@ fi
 
 # Install dependencies
 echo "Installing dependencies..."
-brew install starship stow
+brew install starship stow glow
 
 # Install font (optional but recommended)
 echo "Installing JetBrains Mono Nerd Font..."

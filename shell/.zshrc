@@ -20,6 +20,7 @@ setopt HIST_FIND_NO_DUPS
 alias ll='ls -lah'
 alias la='ls -A'
 alias l='ls -CF'
+alias md='glow'  # Pretty markdown viewer
 
 # ----- Homebrew -----
 eval "$(/opt/homebrew/bin/brew shellenv)"
