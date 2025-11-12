@@ -7,6 +7,7 @@ Minimal, portable terminal setup for macOS.
 - **Shell**: Starship prompt with minimal config
 - **Terminal**: Ghostty with Solarized Dark theme
 - **Font**: JetBrains Mono Nerd Font
+- **Tools**: lsd (colorful ls), glow (markdown viewer)
 
 ## Quick Install
 
@@ -27,7 +28,7 @@ If you prefer manual installation:
 
 ```bash
 # Install dependencies
-brew install starship stow
+brew install starship stow glow lsd
 brew install --cask font-jetbrains-mono-nerd-font ghostty
 
 # Clone and symlink
@@ -38,9 +39,16 @@ stow shell terminal
 
 ## What Gets Installed
 
-- `~/.zshrc` → Basic zsh config with Starship
-- `~/.config/starship.toml` → Minimal prompt config
+- `~/.zshrc` → Basic zsh config with Starship, lsd aliases, glow
+- `~/.config/starship.toml` → Minimal prompt config with git icons
 - `~/.config/ghostty/config` → Terminal theme & font
+
+## Included Aliases
+
+- `ls` → lsd with icons and colors
+- `ll` → lsd -lrth (time-sorted, newest at bottom)
+- `la` → lsd -A (all files)
+- `md` → glow (pretty markdown viewer)
 
 ## Customization
 
