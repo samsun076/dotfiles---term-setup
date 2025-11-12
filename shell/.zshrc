@@ -17,9 +17,10 @@ setopt HIST_IGNORE_ALL_DUPS
 setopt HIST_FIND_NO_DUPS
 
 # ----- Aliases -----
-alias ll='ls -lah'
-alias la='ls -A'
-alias l='ls -CF'
+alias ls='lsd'
+alias ll='lsd -lrth --group-dirs first'
+alias la='lsd -A --group-dirs first'
+alias l='lsd -CF'
 alias md='glow'  # Pretty markdown viewer
 
 # ----- Homebrew -----
