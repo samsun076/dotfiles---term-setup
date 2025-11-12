@@ -6,6 +6,7 @@ $directory$git_branch$git_status$cmd_duration
 $character"""
 
 [directory]
+format = "[$path]($style) "
 truncation_length = 3
 truncate_to_repo = true
 style = "bold cyan"
@@ -16,8 +17,13 @@ symbol = " "
 style = "bold purple"
 
 [git_status]
-format = "[$all_status$ahead_behind]($style) "
+format = '([\[$all_status$ahead_behind\]]($style) )'
 style = "bold red"
+modified = "~"
+untracked = "?"
+staged = "+"
+ahead = "⇡"
+behind = "⇣"
 
 [cmd_duration]
 min_time = 500
