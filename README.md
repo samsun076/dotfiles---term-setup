@@ -15,7 +15,7 @@ On a new Mac:
 
 ```bash
 # Clone the repo
-git clone <your-repo-url> ~/.dotfiles
+git clone https://github.com/samsun076/dotfiles.git ~/.dotfiles
 
 # Run install script
 cd ~/.dotfiles
@@ -32,7 +32,7 @@ brew install starship stow glow lsd
 brew install --cask font-jetbrains-mono-nerd-font ghostty
 
 # Clone and symlink
-git clone <your-repo-url> ~/.dotfiles
+git clone https://github.com/samsun076/dotfiles.git ~/.dotfiles
 cd ~/.dotfiles
 stow shell terminal
 ```
