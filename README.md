@@ -57,3 +57,35 @@ Edit configs in `~/.dotfiles/` and changes will reflect immediately (they're sym
 - **Prompt**: Edit `shell/.config/starship.toml`
 - **Shell**: Edit `shell/.zshrc`
 - **Terminal**: Edit `terminal/.config/ghostty/config`
+
+## Auto-Sync
+
+This repo includes an optional auto-sync feature that:
+- Watches for config changes in the background
+- Uses Claude Haiku to generate meaningful commit messages
+- Shows an approval dialog before pushing
+- Keeps all your machines in sync with useful git history
+
+### Enable Auto-Sync
+
+```bash
+# Load the background service
+launchctl load ~/Library/LaunchAgents/com.dotfiles.sync.plist
+
+# Check status
+launchctl list | grep dotfiles
+```
+
+### Disable Auto-Sync
+
+```bash
+launchctl unload ~/Library/LaunchAgents/com.dotfiles.sync.plist
+```
+
+### Manual Sync
+
+You can also trigger a sync manually:
+
+```bash
+~/.dotfiles/scripts/dotfiles-sync.sh
+```
