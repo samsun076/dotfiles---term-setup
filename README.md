@@ -66,6 +66,19 @@ This repo includes an optional auto-sync feature that:
 - Shows an approval dialog before pushing
 - Keeps all your machines in sync with useful git history
 
+### Setup Auto-Sync (New Machine)
+
+```bash
+# Install fswatch
+brew install fswatch
+
+# Copy the launchd plist
+cp ~/.dotfiles/scripts/com.dotfiles.sync.plist ~/Library/LaunchAgents/
+
+# Load the service
+launchctl load ~/Library/LaunchAgents/com.dotfiles.sync.plist
+```
+
 ### Enable Auto-Sync
 
 ```bash
