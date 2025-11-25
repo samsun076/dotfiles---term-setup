@@ -36,3 +36,6 @@ eval "$(pyenv virtualenv-init -)"
 
 # ----- envman -----
 [ -s "$HOME/.config/envman/load.sh" ] && source "$HOME/.config/envman/load.sh"
+
+# Added by Antigravity
+export PATH="/Users/dm/.antigravity/antigravity/bin:$PATH"
