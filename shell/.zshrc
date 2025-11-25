@@ -25,3 +25,14 @@ alias md='glow'  # Pretty markdown viewer
 
 # ----- Homebrew -----
 eval "$(/opt/homebrew/bin/brew shellenv)"
+
+# ----- PATH additions -----
+source ~/.config/envman/PATH.env
+export PATH=~/.npm-global/bin:$PATH
+
+# ----- pyenv -----
+eval "$(pyenv init -)"
+eval "$(pyenv virtualenv-init -)"
+
+# ----- envman -----
+[ -s "$HOME/.config/envman/load.sh" ] && source "$HOME/.config/envman/load.sh"
