@@ -2,6 +2,9 @@
 # dotfiles-sync.sh - Watch for dotfile changes and generate AI commit messages
 set -e
 
+# Ensure PATH includes npm-global for claude CLI
+export PATH="$HOME/.npm-global/bin:/opt/homebrew/bin:$PATH"
+
 DOTFILES_DIR="$HOME/.dotfiles"
 PENDING_MSG="/tmp/dotfiles-pending-commit.txt"
 LOG_FILE="/tmp/dotfiles-sync.log"
