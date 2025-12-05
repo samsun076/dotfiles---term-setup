@@ -31,7 +31,8 @@ format = "took [$duration]($style) "
 style = "bold yellow"
 
 [python]
-format = '[(\($virtualenv\))]($style) '
+format = 'via [$symbol$version (\($virtualenv\))]($style) '
+symbol = "🐍 "
 style = "bold yellow"
 
 [character]
