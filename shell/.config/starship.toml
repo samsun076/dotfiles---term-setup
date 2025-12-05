@@ -34,6 +34,9 @@ style = "bold yellow"
 format = 'via [$symbol$version (\($virtualenv\))]($style) '
 symbol = "🐍 "
 style = "bold yellow"
+detect_extensions = []
+detect_files = []
+detect_folders = []
 
 [character]
 success_symbol = "[❯](bold green)"
