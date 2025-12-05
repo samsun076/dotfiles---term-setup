@@ -2,7 +2,7 @@
 # Clean and simple prompt with directory, git branch, and execution time
 
 format = """
-$directory$git_branch$git_status$cmd_duration
+$directory$git_branch$git_status$python$cmd_duration
 $character"""
 
 [directory]
@@ -28,6 +28,10 @@ behind = "⇣"
 [cmd_duration]
 min_time = 500
 format = "took [$duration]($style) "
+style = "bold yellow"
+
+[python]
+format = '[(\($virtualenv\))]($style) '
 style = "bold yellow"
 
 [character]
