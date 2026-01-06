@@ -40,3 +40,4 @@ eval "$(pyenv virtualenv-init -)"
 
 # Added by Antigravity
 export PATH="/Users/dm/.antigravity/antigravity/bin:$PATH"
+export PATH="$HOME/.local/bin:$PATH"
